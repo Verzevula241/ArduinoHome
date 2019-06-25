@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Arduino.jnlp">
+  <information>
+    <title>ArduinoHome</title>
+    <vendor>Unknown</vendor>
+    <description>Arduino</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Arduino.jar" size="143758" download="eager" />
+    <jar href="sample\jar\arduino.jar" size="6873" download="eager" />
+    <jar href="sample\jar\jSerialComm-1.3.11.jar" size="252175" download="eager" />
+    <jar href="sample\jar\jssc-2.8.0.jar" size="153562" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="Arduino" />
+  <update check="background"/>
+</jnlp>

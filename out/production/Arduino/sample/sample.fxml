@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <TabPane focusTraversable="true" prefHeight="400.0" prefWidth="302.0" rotateGraphic="true" side="TOP" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <tabs>
+        <Tab text="Домашняя">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="-15.0" layoutY="255.0" opacity="0.47" rotate="55.0" smooth="true" stroke="WHITE" strokeType="INSIDE" visible="true" width="371.2024383544922">
+                  <fill>
+                    <Color blue="0.800" green="0.706" red="0.000" fx:id="x3" />
+                  </fill>
+                </Rectangle>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-35.0" layoutY="-57.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" visible="true" width="371.2024383544922" />
+                <Label layoutX="14.0" layoutY="14.0" text="Температура">
+                  <font>
+                    <Font size="20.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Text fx:id="temp" font="$x1" layoutX="236.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                <Text fx:id="Test_tries" layoutX="14.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test" />
+                <Text id="temp" font="$x1" layoutX="261.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="°" />
+                <Label font="$x1" layoutX="14.0" layoutY="162.0" text="Влажность" />
+                <Text id="temp" fx:id="temp1" font="$x1" layoutX="231.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                <Text id="temp" font="$x1" layoutX="256.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" />
+                <ImageView fx:id="caply" fitHeight="150.0" fitWidth="150.0" layoutX="76.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" visible="true" />
+                <Rectangle fx:id="grad" arcHeight="5.0" arcWidth="5.0" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 140.0px 100.0px, radius 200.0px, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0x000000ff 100.0%)" height="95.98046875" layoutX="14.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="272.0" />
+                <Rectangle id="grad" fx:id="grad1" arcHeight="5.0" arcWidth="5.0" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 140.0px 100.0px, radius 200.0px, 0xff0000ff 0.0%, 0x0000ffff 40.0%, 0x000000ff 100.0%)" height="95.98046875" layoutX="14.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="272.0" />
+                <Rectangle id="grad" fx:id="grad2" arcHeight="5.0" arcWidth="5.0" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 140.0px 100.0px, radius 200.0px, 0xff0000ff 0.0%, 0x0000ffff 50.0%, 0x000000ff 100.0%)" height="95.98046875" layoutX="14.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="272.0" />
+                <Button fx:id="clc" layoutX="277.0" layoutY="336.0" minWidth="21.720703125" mnemonicParsing="false" opacity="0.0" prefHeight="27.0" prefWidth="21.720703125" text="Button" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Устройства">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="299.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-35.0" layoutY="-57.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-15.0" layoutY="255.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <Button id="lamp" fx:id="R" layoutX="160.0" layoutY="62.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: red" text="Lamp" />
+                <Button id="lamp" fx:id="Y" layoutX="160.0" layoutY="90.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: yellow" text="" textOverrun="CLIP" />
+                <Button id="lamp" fx:id="P" layoutX="160.0" layoutY="118.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: pink" text="Lamp" />
+                <Button id="lamp" fx:id="G" layoutX="189.0" layoutY="62.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: green" text="Lamp" />
+                <Button id="lamp" fx:id="O" layoutX="189.0" layoutY="90.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: orange" text="Lamp" />
+                <Button id="lamp" fx:id="Pur" layoutX="189.0" layoutY="118.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: purple" text="Lamp" />
+                <Button id="lamp" fx:id="B" layoutX="217.0" layoutY="62.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: blue" text="Lamp" />
+                <Button id="lamp" fx:id="V" layoutX="217.0" layoutY="90.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="-fx-background-color: violet" text="Lamp" />
+                <Button id="lamp" fx:id="Random" layoutX="217.0" layoutY="118.0" minWidth="22.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" style="" text="R">
+                  <font>
+                    <Font size="12.0" />
+                  </font>
+                </Button>
+                <Button id="lamp" fx:id="Forward" layoutX="46.0" layoutY="200.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="94.0" text="&lt;-" />
+                <Button id="lamp" fx:id="Backward" layoutX="154.0" layoutY="200.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="94.0" text="-&gt;" />
+                <ToggleButton fx:id="Lamp_tog" layoutX="46.0" layoutY="62.0" mnemonicParsing="false" onAction="#tog" prefHeight="77.0" prefWidth="94.0" text="">
+                  <graphic>
+                    <ImageView fx:id="Lamp_img" fitHeight="65.49998474121094" fitWidth="65.49998474121094" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@img/creative.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </ToggleButton>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Графики">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00b4cc" height="200.0" layoutX="-35.0" layoutY="-57.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-15.0" layoutY="255.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <VBox fx:id="box" layoutX="0.0" layoutY="0.0" prefHeight="169.0" prefWidth="300.0" visible="true" />
+                <VBox id="box" fx:id="box_hum" layoutX="2.0" layoutY="193.0" prefHeight="169.0" prefWidth="300.0" visible="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Расписание">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-35.0" layoutY="-57.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x3" height="200.0" layoutX="-15.0" layoutY="255.0" opacity="0.47" rotate="55.0" stroke="WHITE" strokeType="INSIDE" width="371.2024383544922" />
+                <MenuButton fx:id="Datch" layoutX="35.0" layoutY="26.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="231.0" text="Датчик">
+                  <font>
+                    <Font size="25.0" fx:id="x2" />
+                  </font>
+                  <items>
+                    <CheckMenuItem mnemonicParsing="false" onAction="#temp_sel" text="Температура" fx:id="Temp" />
+                    <CheckMenuItem mnemonicParsing="false" onAction="#vlag_sel" text="Влажность" fx:id="Vlag" />
+                    <CheckMenuItem mnemonicParsing="false" onAction="#svet_sel" text="Освещение" fx:id="Svet" />
+                    <CheckMenuItem mnemonicParsing="false" onAction="#dvig_sel" text="Движение" fx:id="dvig" />
+                  </items>
+                </MenuButton>
+                <MenuButton fx:id="Dev" font="$x2" layoutX="35.0" layoutY="193.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="231.0" text="Устройство">
+                  <items>
+                    <CheckMenuItem mnemonicParsing="false" onAction="#diod_sel" text="Свет" fx:id="Diod" />
+                    <CheckMenuItem mnemonicParsing="false" onAction="#serv_sel" text="Вентелятор" fx:id="Serv" />
+                  </items>
+                </MenuButton>
+                <Slider fx:id="Porogi" layoutX="35.0" layoutY="117.0" prefHeight="57.0" prefWidth="202.0" />
+                <Label fx:id="Porog_znak" layoutX="242.0" layoutY="129.0" prefHeight="29.0" prefWidth="40.0" text="0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
